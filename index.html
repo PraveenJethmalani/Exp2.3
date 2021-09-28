@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta http-equiv="X-UA-Compatible" content="ie=edge"> <title>CSS Selectors</title> 
+<style> 
+/* Element Selectors */ 
+body{ 
+background-color: black; 
+} 
+p1{ 
+color:lightgrey; 
+font-family: Futura; 
+} 
+#tinycontainer{ 
+margin-top: 20px; 
+margin-left: auto; 
+margin-right: auto; 
+width: 50%; 
+height: auto; 
+border-style: double; 
+border-width: 10px; 
+border-color: red; 
+}
+</style> 
+</head> 
+<body> 
+<div> 
+<p1>Here we can see that the body tag calls to the body selector in the CSS sheet. This makes our background black on the entire page</p1> 
+<p1>Here we can see that the custom made p1 tag calls to the p1 selector in the CSS sheet. This makes our font light grey in color, and in Futura.</p1> 
+<p1>We can see that the paragraphs within this div container are not affected because there is no ID attribute in the opening div tag, thus it is not applying any styling properties. In this case the div tags do not even need to be here.</p1> 
+</div> 
+<div id="tinycontainer"> 
+<p1>You can see here that we still have the same color and font-family properties for our p1 element, but because the div container has the tinycontainer id, it calls the #tinycontainer selector in the CSS sheet. This adds a red double border at 10px, auto aligns to the centre of the page, auto sizes the width of the container to 50% of the browser window, and spaces it 20px from the bottom of the above div container.</p1> 
+</div> 
+</body> 
+</html>
